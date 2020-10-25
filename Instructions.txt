@@ -1,0 +1,12 @@
+Test 1 API 
+Open the project in Postman
+Pedro Henrique Ferreira Correa.postman_collection.json (Project)
+Pedro Henrique Ferreira Correa.postman_test_run.json (Test Result)
+TestAPI.jpg (Test Evidence)
+
+Test 2 UI
+Open the project in Selenium IDE.
+Stefanini.side
+TestUI.jpg (Test Evidence)
+
+

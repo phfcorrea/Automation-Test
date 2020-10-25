@@ -1,0 +1,141 @@
+{
+	"id": "de188ca7-df27-460b-a328-18ad38b95982",
+	"name": "Pedro Henrique Ferreira Correa",
+	"timestamp": "2020-10-25T03:28:04.874Z",
+	"collection_id": "fec05aa1-553f-43e6-b36a-bf65f8c329d0",
+	"folder_id": "d7d5f1c5-c193-46b8-9a2b-7b59313224ea",
+	"environment_id": "0",
+	"totalPass": 8,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6ba164ae-a157-4b1d-b704-2d9d6d3fd83b",
+			"name": "Get Weather Succes",
+			"url": "https://api.interzoid.com/getweather?license=2d900405bfea4821dba7cfe43ba6ceaa&city=Round%20Rock&state=TX",
+			"time": 383,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status description is OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status description is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				383
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status description is OK": true
+				}
+			]
+		},
+		{
+			"id": "677398ab-6282-498f-8788-6a58c9048054",
+			"name": "Get Weather Fail 400",
+			"url": "https://api.interzoid.com/getweather?license=2d900405bfea4821dba7cfe43ba6ceaa&city=&state=",
+			"time": 122,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Status description is Bad Request": true,
+				"Body matches string is: Insufficient parameters: city and state are required ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status description is Bad Request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string is: Insufficient parameters: city and state are required ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Status description is Bad Request": true,
+					"Body matches string is: Insufficient parameters: city and state are required ": true
+				}
+			]
+		},
+		{
+			"id": "d0e49a4d-9929-4d51-8c96-9538dca9a2cf",
+			"name": "Get Weather Fail 404",
+			"url": "https://api.interzoid.com/getweather?license=2d900405bfea4821dba7cfe43ba6ceaa&city=Tampa&state=TX",
+			"time": 125,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Status description is Not Found": true,
+				"Body matches string is: City and state location not found ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status description is Not Found": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string is: City and state location not found ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				125
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Status description is Not Found": true,
+					"Body matches string is: City and state location not found ": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 630,
+	"collection": {
+		"requests": [
+			{
+				"id": "6ba164ae-a157-4b1d-b704-2d9d6d3fd83b",
+				"method": "GET"
+			},
+			{
+				"id": "677398ab-6282-498f-8788-6a58c9048054",
+				"method": "GET"
+			},
+			{
+				"id": "d0e49a4d-9929-4d51-8c96-9538dca9a2cf",
+				"method": "GET"
+			}
+		]
+	}
+}

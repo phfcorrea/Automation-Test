@@ -1,0 +1,229 @@
+{
+  "id": "155c7350-6750-4f63-9e4f-49cac3e25b8f",
+  "version": "2.0",
+  "name": "Stefanini",
+  "url": "https://demo.cs-cart.com",
+  "tests": [{
+    "id": "fc1aa51b-6991-4a07-82a0-8faa39908152",
+    "name": "UI test",
+    "commands": [{
+      "id": "5ad7f008-1601-4248-8387-319c4c069187",
+      "comment": "",
+      "command": "open",
+      "target": "/stores/a0f3fd12d3576f23/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3564c75f-4a0c-4751-915f-43e224cd9980",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1039x568",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba90d53c-5fe5-42f3-96b3-1c32ca9037fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_input",
+      "targets": [
+        ["id=search_input", "id"],
+        ["name=q", "name"],
+        ["css=#search_input", "css:finder"],
+        ["xpath=//input[@id='search_input']", "xpath:attributes"],
+        ["xpath=//div[@id='tygh_main_container']/div[2]/div/div/div[3]/div/div/div/div/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "034fb66d-1cc8-434d-b741-17a20a24d53f",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_input",
+      "targets": [
+        ["id=search_input", "id"],
+        ["name=q", "name"],
+        ["css=#search_input", "css:finder"],
+        ["xpath=//input[@id='search_input']", "xpath:attributes"],
+        ["xpath=//div[@id='tygh_main_container']/div[2]/div/div/div[3]/div/div/div/div/form/input[9]", "xpath:idRelative"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "phone"
+    }, {
+      "id": "76756af6-b8fd-41f5-88f5-1966a9802ef4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ty-icon-search",
+      "targets": [
+        ["css=.ty-icon-search", "css:finder"],
+        ["xpath=//div[@id='tygh_main_container']/div[2]/div/div/div[3]/div/div/div/div/form/button/i", "xpath:idRelative"],
+        ["xpath=//form/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6a2066d-43a8-4c9d-981b-57cac6271b1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ty-minicart-title__header",
+      "targets": [
+        ["css=.ty-minicart-title__header", "css:finder"],
+        ["xpath=//div[@id='sw_dropdown_8']/a/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa5d0e86-3dad-478c-ac2a-c9f8eb7e9243",
+      "comment": "",
+      "command": "click",
+      "target": "id=det_img_238",
+      "targets": [
+        ["id=det_img_238", "id"],
+        ["css=#det_img_238", "css:finder"],
+        ["xpath=//img[contains(@src,'https://demo.cs-cart.com/stores/a0f3fd12d3576f23/images/thumbnails/150/150/detailed/0/iphone-smartphone-hi.jpg')]", "xpath:img"],
+        ["xpath=//img[@id='det_img_238']", "xpath:attributes"],
+        ["xpath=//div[@id='pagination_contents']/div[3]/div[6]/div/form/div/a/img", "xpath:idRelative"],
+        ["xpath=//form/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84efa4f6-d2dc-4724-8e03-2ab8abdf8939",
+      "comment": "",
+      "command": "click",
+      "target": "id=button_cart_238",
+      "targets": [
+        ["id=button_cart_238", "id"],
+        ["name=dispatch[checkout.add..238]", "name"],
+        ["css=#button_cart_238", "css:finder"],
+        ["xpath=//button[@id='button_cart_238']", "xpath:attributes"],
+        ["xpath=//div[@id='add_to_cart_update_238']/button", "xpath:idRelative"],
+        ["xpath=//div[9]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7fef754-650c-438e-a284-a6615d24b7f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ty-float-right > .cm-notification-close",
+      "targets": [
+        ["css=.ty-float-right > .cm-notification-close", "css:finder"],
+        ["xpath=(//a[contains(text(),'Checkout')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://demo.cs-cart.com/stores/a0f3fd12d3576f23/checkout/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac82c073-dd5b-40fa-9517-02da19ff5143",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,217)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "029690e3-0fdf-4176-b135-071750841aef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#payments_2 > .litecheckout__shipping-method__delivery-time",
+      "targets": [
+        ["css=#payments_2 > .litecheckout__shipping-method__delivery-time", "css:finder"],
+        ["xpath=//label[@id='payments_2']/p[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/label/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Call 555-0123')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a6bf514-ce46-43d8-8e5f-4f085884b197",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_accept_terms5f94f6c2253bc",
+      "targets": [
+        ["id=id_accept_terms5f94f6c2253bc", "id"],
+        ["name=accept_terms", "name"],
+        ["css=#id_accept_terms5f94f6c2253bc", "css:finder"],
+        ["xpath=//input[@id='id_accept_terms5f94f6c2253bc']", "xpath:attributes"],
+        ["xpath=//div[@id='litecheckout_terms']/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfff3923-c2b0-4c67-a4d3-1e8f23833adb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "40c19bc9-afce-4f3b-abef-9b6e03f4cdd3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee035eb3-17d2-4a97-81f9-a44ca4cf50b9",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "d82a142a-91b6-4423-af17-94f2cc893acd",
+      "comment": "",
+      "command": "click",
+      "target": "id=litecheckout_place_order",
+      "targets": [
+        ["id=litecheckout_place_order", "id"],
+        ["name=dispatch[checkout.place_order]", "name"],
+        ["css=#litecheckout_place_order", "css:finder"],
+        ["xpath=//button[@id='litecheckout_place_order']", "xpath:attributes"],
+        ["xpath=//div[@id='litecheckout_final_section']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c32b854f-64bc-4209-a104-6019453a87dc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=litecheckout_place_order",
+      "targets": [
+        ["id=litecheckout_place_order", "id"],
+        ["name=dispatch[checkout.place_order]", "name"],
+        ["css=#litecheckout_place_order", "css:finder"],
+        ["xpath=//button[@id='litecheckout_place_order']", "xpath:attributes"],
+        ["xpath=//div[@id='litecheckout_final_section']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6000ac65-f236-4e1c-8e55-5ef9271efe9e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=litecheckout_place_order",
+      "targets": [
+        ["id=litecheckout_place_order", "id"],
+        ["name=dispatch[checkout.place_order]", "name"],
+        ["css=#litecheckout_place_order", "css:finder"],
+        ["xpath=//button[@id='litecheckout_place_order']", "xpath:attributes"],
+        ["xpath=//div[@id='litecheckout_final_section']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "05f77e2d-8223-49c4-9b4f-47cf8f7868ec",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fc1aa51b-6991-4a07-82a0-8faa39908152"]
+  }],
+  "urls": ["https://demo.cs-cart.com/"],
+  "plugins": []
+}

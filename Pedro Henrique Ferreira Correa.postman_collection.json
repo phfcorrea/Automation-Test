@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "fec05aa1-553f-43e6-b36a-bf65f8c329d0",
+		"name": "Pedro Henrique Ferreira Correa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Weather Tests",
+			"item": [
+				{
+					"name": "Get Weather Succes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7cb48ae8-e2ab-43e8-b85a-fd0da98b302e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Status description is OK\", function () {",
+									"    pm.response.to.have.status(\"OK\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.interzoid.com/getweather?license=2d900405bfea4821dba7cfe43ba6ceaa&city=Round Rock&state=TX",
+							"protocol": "https",
+							"host": [
+								"api",
+								"interzoid",
+								"com"
+							],
+							"path": [
+								"getweather"
+							],
+							"query": [
+								{
+									"key": "license",
+									"value": "2d900405bfea4821dba7cfe43ba6ceaa"
+								},
+								{
+									"key": "city",
+									"value": "Round Rock"
+								},
+								{
+									"key": "state",
+									"value": "TX"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Weather Fail 400",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "90c55140-4b7c-4719-888d-6698a9cae740",
+								"exec": [
+									"pm.test(\"Status code is 400\", function() {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									"pm.test(\"Status description is Bad Request\", function() {",
+									"    pm.response.to.have.status(\"Bad Request\");",
+									"});",
+									"pm.test(\"Body matches string is: Insufficient parameters: city and state are required \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Insufficient parameters: city and state are required\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.interzoid.com/getweather?license=2d900405bfea4821dba7cfe43ba6ceaa&city=&state=",
+							"protocol": "https",
+							"host": [
+								"api",
+								"interzoid",
+								"com"
+							],
+							"path": [
+								"getweather"
+							],
+							"query": [
+								{
+									"key": "license",
+									"value": "2d900405bfea4821dba7cfe43ba6ceaa"
+								},
+								{
+									"key": "city",
+									"value": ""
+								},
+								{
+									"key": "state",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Weather Fail 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dd5e70f5-99ea-4f9a-adb0-9fc3df4739b8",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"pm.test(\"Status description is Not Found\", function () {",
+									"    pm.response.to.have.status(\"Not Found\");",
+									"});",
+									"pm.test(\"Body matches string is: City and state location not found \", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"City and state location not found\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.interzoid.com/getweather?license=2d900405bfea4821dba7cfe43ba6ceaa&city=Tampa&state=TX",
+							"protocol": "https",
+							"host": [
+								"api",
+								"interzoid",
+								"com"
+							],
+							"path": [
+								"getweather"
+							],
+							"query": [
+								{
+									"key": "license",
+									"value": "2d900405bfea4821dba7cfe43ba6ceaa"
+								},
+								{
+									"key": "city",
+									"value": "Tampa"
+								},
+								{
+									"key": "state",
+									"value": "TX"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
